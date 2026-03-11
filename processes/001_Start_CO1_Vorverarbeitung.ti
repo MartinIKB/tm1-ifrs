@@ -1,0 +1,33 @@
+#region Prolog
+
+ODBCOpen( 'co1','f_prod_data','access_prod' );
+
+# Ermittlung aller Ultimo-Stichtage
+# Durchiterieren der OWB-Verarbeitung für die Stichtage
+vHeuteNum = Now;
+vStartDatumNum = DayNo('2024-12-31');
+vLaufDatumNum = vStartDatumNum;
+While(vLaufDatumNum <= vHeuteNum);
+    vMonatAktuell = Numbr(Timst(vLaufDatumNum, '\m'));
+    vMonatFolgetag = Numbr(Timst(vLaufDatumNum + 1, '\m'));
+    vIstUltimo = 0;
+    If(vLaufDatumNum = vStartDatumNum);
+        vIstUltimo = 1;
+    ElseIf(vMonatAktuell <> vMonatFolgetag);
+        vIstUltimo = 1;
+    EndIf; 
+    If(vIstUltimo = 1);
+        vDatumString = Timst(vLaufDatumNum, '\d.\m.\Y');
+        vSQL_1 = 'BEGIN PK_IFRS_PARAMETER.Main(STICHTAG => TO_DATE(''' | vDatumString | ''', ''DD.MM.YYYY'')); COMMIT; END;';
+        ODBCOutput('co1', vSQL_1);
+        vSQL_2 = 'BEGIN PK_STG_IFRS_GRUNDDATEN.Main; COMMIT; END;';
+        ODBCOutput('co1', vSQL_2);
+        vSQL_3 = 'BEGIN PK_DTL_IFRS_IFRS_DATEN.Main; COMMIT; END;';
+        ODBCOutput('co1', vSQL_3);
+        vSQL_4 = 'BEGIN PK_DTL_IFRS_HGB_DATEN.Main; COMMIT; END;';
+        ODBCOutput('co1', vSQL_4);
+        LogOutput('INFO', 'Mapping-Durchlauf für Stichtag ' | vDatumString | ' erfolgreich abgeschlossen.');
+    EndIf;
+    vLaufDatumNum = vLaufDatumNum + 1;
+End;
+#endregion

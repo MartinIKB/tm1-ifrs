@@ -1,0 +1,12 @@
+{
+	"@type":"Process",
+	"Name":"001_Start_CO1_Vorverarbeitung",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"001_Start_CO1_Vorverarbeitung.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

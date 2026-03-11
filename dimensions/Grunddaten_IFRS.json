@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"Grunddaten_IFRS",
+	"Hierarchies@Code.links":
+	[
+		"Grunddaten_IFRS.hierarchies/Grunddaten_IFRS.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Grunddaten_IFRS')/Hierarchies('Grunddaten_IFRS')"
+	}
+}

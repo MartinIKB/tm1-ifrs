@@ -1,0 +1,28 @@
+#region Prolog
+SubsetCreatebyMDX( 'sZeilen', '{[Zeilen].[Zeilen].MEMBERS}', 1 );
+vAnzahlSubsetZeilen=SubsetGetSize( 'Zeilen','sZeilen');
+
+LogOutput( 'INFO', 'Anzahl der Zeilen in Dimension vorher: '|NumberToString( vAnzahlSubsetZeilen ) );
+
+#endregion
+#region Metadata
+
+#endregion
+#region Data
+vZeilenanzahlAnlieferung=vZeilenanzahl;
+#endregion
+#region Epilog
+LogOutput( 'INFO', 'Benötigte Zeilen für den Stichtag: '|NumberToString( vZeilenanzahlAnlieferung ));
+
+vZeilennummer=vAnzahlSubsetZeilen;
+vAnzahlNeueZeilen=0;
+
+while (vZeilennummer<vZeilenanzahlAnlieferung);
+    vZeilennummer=vZeilennummer+1;
+    vNeueZeile='Zeile_'|NumberToString( vZeilennummer );
+    DimensionElementInsertDirect( 'Zeilen', '',vNeueZeile,'S' );
+    vAnzahlNeueZeilen=vAnzahlNeueZeilen+1;
+end;
+
+LogOutput( 'INFO', 'Anzahl neu angelegte Zeilen: '|NumberToString(vAnzahlNeueZeilen ));
+#endregion

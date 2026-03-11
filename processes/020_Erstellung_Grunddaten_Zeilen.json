@@ -1,0 +1,39 @@
+{
+	"@type":"Process",
+	"Name":"020_Erstellung_Grunddaten_Zeilen",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"020_Erstellung_Grunddaten_Zeilen.ti",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=33€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"ODBC",
+		"dataSourceNameForClient":"co1",
+		"dataSourceNameForServer":"co1",
+		"password":"bxlKp1CYG=_5Y>k>h;2ptCrNo]Bq\\;<v]Uwk4;EZdM@5<fctW<G9u5<KFNYMfQT_Rky`S;yKDl8:N67><W2=EsY`xU~0>\\jnx0=joZVg<vc;RgmetloUT97c9o?i851DYguwR5H=?9deoi6BrhbV;C:U]>BM`=2miVmJ19`i0\\qx3E3U?DTi\\3^xjr^dxSgQKejFsDY",
+		"query":"select max(anzahl)\r\nfrom\r\n(\r\nselect stichtag,max(anzahl) as anzahl\r\nfrom\r\n(\r\nselect to_char(stichtag,'DD.MM.YYYY') as stichtag,count(stichtag) as anzahl from stg_ifrs_grunddaten where  stg_ifrs_grunddaten.herkunft_anlief_kennzahl ='APPIAN' group by stichtag\r\nunion all\r\nselect to_char(stichtag,'DD.MM.YYYY') as stichtag,count(stichtag) as anzahl from stg_ifrs_grunddaten where  stg_ifrs_grunddaten.herkunft_anlief_kennzahl ='ACCOUNTING'  group by stichtag\r\n)\r\ngroup by stichtag\r\n)",
+		"userName":"f_prod_data",
+		"usesUnicode":true
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"vStichtag",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vZeilenanzahl",
+			"Type":"Numeric",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

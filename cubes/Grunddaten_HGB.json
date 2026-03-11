@@ -1,0 +1,20 @@
+{
+	"@type":"Cube",
+	"Name":"Grunddaten_HGB",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Zeilen')"
+		},
+		{
+			"@id":"Dimensions('Zeit')"
+		},
+		{
+			"@id":"Dimensions('Grunddaten_HGB')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Grunddaten_HGB.views/Default.json"
+	]
+}

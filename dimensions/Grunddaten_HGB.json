@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"Grunddaten_HGB",
+	"Hierarchies@Code.links":
+	[
+		"Grunddaten_HGB.hierarchies/Grunddaten_HGB.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Grunddaten_HGB')/Hierarchies('Grunddaten_HGB')"
+	}
+}

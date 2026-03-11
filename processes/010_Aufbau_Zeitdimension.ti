@@ -1,0 +1,18 @@
+#region Prolog
+
+DimensionDeleteAllElements( 'Zeit' );
+DimensionElementInsert('Zeit', '', 'Zeit','C' );
+#endregion
+#region Metadata
+
+DimensionElementInsert( 'Zeit','',vGJ, 'C' );
+DimensionElementComponentAdd( 'Zeit','Zeit',vGJ,1 );
+
+DimensionElementInsert( 'Zeit','',vStichtag, 'N' );
+DimensionElementComponentAdd( 'Zeit',vGJ,vStichtag,1 );
+
+
+AttrPutS( vMonatsscheibe, 'Zeit', vStichtag, 'Caption' ); 
+
+
+#endregion

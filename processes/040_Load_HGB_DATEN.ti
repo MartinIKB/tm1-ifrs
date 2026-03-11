@@ -1,0 +1,52 @@
+#region Prolog
+
+CubeClearData( 'Grunddaten_HGB' );
+#endregion
+#region Data
+ 
+CellPutS( vStichtag, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'Stichtag' );
+CellPutS( vEGKEY_ID, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'EGKEY_ID' ); 
+CellPutS( vEG_IDENT, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'EG_IDENT' );
+CellPutS( vEXT_CONTRACT, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'EXT_CONTRACT' );
+CellPutS( vKUERZEL, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'KUERZEL' );
+CellPutN( vBETRAG_EUR, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'BETRAG_EUR' );
+CellPutS( vWAEHR_CODE, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'WAEHR_CODE' );
+CellPutS( vKONZ_ERGEB_POSITION, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'KONZ_ERGEB_POSITION' );
+CellPutS( vPOSITIONS_TEXT, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'POSITIONS_TEXT' );
+CellPutS( vSACHKONTO_NR, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'SACHKONTO_NR' );
+CellPutS( vSACHKTO_BESCHR_LANG, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'SACHKTO_BESCHR_LANG' );
+CellPutS( vBETEILIGUNGSART_FDB, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'BETEILIGUNGSART_FDB' );
+CellPutS( vDEBITOR_KTO_NR_EG, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'DEBITOR_KTO_NR_EG' );
+CellPutS( vRANG_FORD_VERB_KZ, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'RANG_FORD_VERB_KZ' );
+CellPutS( vVERBUND_NR, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'VERBUND_NR' );
+CellPutS( vHERKUNFT_ANLIEF, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'HERKUNFT_ANLIEF' );
+CellPutS( vMANDANT, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'MANDANT' );
+CellPutS( vBUCHUNGSKREIS, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'BUCHUNGSKREIS' );
+CellPutS( vKD_NR, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'KD_NR' );
+CellPutS( vPRODUKT_NR, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'PRODUKT_NR' );
+CellPutS( vLFD_NR, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'LFD_NR' );
+CellPutS( vTRANCHE, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'TRANCHE' );
+CellPutS( vGESCHAEFTS_NR, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'GESCHAEFTS_NR' );
+CellPutS( vUB_NR, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'UB_NR' );
+CellPutS( vTYP, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'TYP' ); 
+CellPutS( vT_NB, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'T_NB' );
+CellPutS( vCONTRACT_ORIG, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'CONTRACT_ORIG' );
+CellPutS( vPORTFOLIO, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'PORTFOLIO' );
+CellPutS( vINSTRUMENT_CODE, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'INSTRUMENT_CODE' );
+CellPutS( vPVS, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'PVS' );
+CellPutS( vASSETKLASSE, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'ASSETKLASSE' );
+CellPutS( vBESTANDSKLASSE, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'BESTANDSKLASSE' );
+CellPutS( vCCY, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'CCY' );
+CellPutS( vIFRS_KATEGORIE, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'IFRS_KATEGORIE' );
+CellPutS( vIFRS_STUFE, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'IFRS_STUFE' );
+CellPutS( vKONSORTIAL_IDENT, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'KONSORTIAL_IDENT' );
+CellPutS( vPRODUKT_GRP_VORSYS, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'PRODUKT_GRP_VORSYS' );
+CellPutS( vHERKUNFT_ANLIEF_KENNZAHL, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'HERKUNFT_ANLIEF_KENNZAHL' );
+CellPutS( vLADE_DAT, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'LADE_DAT' );
+CellPutS( vSCHLUESSEL_HGB, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'SCHLUESSEL_HGB' );
+CellPutS( vHGB_TYP, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'HGB_TYP' );
+CellPutS( vSEGMENT, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'SEGMENT' );
+CellPutS( vOLAP_VE_SCHL, 'Grunddaten_HGB', 'Zeile_'|vZAEHLER, vStichtag, 'OLAP_VE_SCHL' );
+
+
+#endregion

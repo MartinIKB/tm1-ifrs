@@ -1,0 +1,28 @@
+{
+	"@type":"MDXView",
+	"Name":"Default",
+	"MDX@Code.link":"Default.mdx",
+	"IsAutocalculate" : true,
+	"IsDeferComputeOnLeafDataEntry" : false,
+	"IsSuppressComputeOnOpen" : false,
+	"Meta" : 
+	{
+		"Aliases" : {},
+		"ContextSets" : 
+		{
+			"[Zeit].[Zeit]" : 
+			{
+				"Expression" : "{{TM1FILTERBYLEVEL(TM1SUBSETALL([Zeit].[Zeit]) , 0)}}"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Grunddaten_IFRS].[Grunddaten_IFRS]" : false,
+			"[Zeilen].[Zeilen]" : false,
+			"[Zeit].[Zeit]" : false
+		}
+	},
+	"ViewExtractSkipConsolidatedValues" : true,
+	"ViewExtractSkipRuleValues" : false,
+	"ViewExtractSkipZeroes" : true
+}

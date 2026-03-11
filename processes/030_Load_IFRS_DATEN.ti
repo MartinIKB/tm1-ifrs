@@ -1,0 +1,57 @@
+#region Prolog
+
+CubeClearData( 'Grunddaten_IFRS' );
+#endregion
+#region Data
+ 
+CellPutS( vStichtag, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'Stichtag' );
+CellPutS( vEGKEY_ID, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'EGKEY_ID' ); 
+CellPutS( vEG_IDENT, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'EG_IDENT' );
+CellPutS( vEXT_CONTRACT, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'EXT_CONTRACT' );
+CellPutS( vKUERZEL, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'KUERZEL' );
+CellPutN( vBETRAG_EUR, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'BETRAG_EUR' );
+CellPutS( vWAEHR_CODE, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'WAEHR_CODE' );
+CellPutS( vKONZ_ERGEB_POSITION, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'KONZ_ERGEB_POSITION' );
+CellPutS( vPOSITIONS_TEXT, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'POSITIONS_TEXT' );
+CellPutS( vSACHKONTO_NR, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'SACHKONTO_NR' );
+CellPutS( vSACHKTO_BESCHR_LANG, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'SACHKTO_BESCHR_LANG' );
+CellPutS( vBETEILIGUNGSART_FDB, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'BETEILIGUNGSART_FDB' );
+CellPutS( vDEBITOR_KTO_NR_EG, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'DEBITOR_KTO_NR_EG' );
+CellPutS( vRANG_FORD_VERB_KZ, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'RANG_FORD_VERB_KZ' );
+CellPutS( vVERBUND_NR, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'VERBUND_NR' );
+CellPutS( vHERKUNFT_ANLIEF, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'HERKUNFT_ANLIEF' );
+CellPutS( vMANDANT, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'MANDANT' );
+CellPutS( vBUCHUNGSKREIS, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'BUCHUNGSKREIS' );
+CellPutS( vKD_NR, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'KD_NR' );
+CellPutS( vPRODUKT_NR, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'PRODUKT_NR' );
+CellPutS( vLFD_NR, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'LFD_NR' );
+CellPutS( vTRANCHE, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'TRANCHE' );
+CellPutS( vGESCHAEFTS_NR, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'GESCHAEFTS_NR' );
+CellPutS( vUB_NR, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'UB_NR' );
+CellPutS( vTYP, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'TYP' ); 
+CellPutS( vT_NB, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'T_NB' );
+CellPutS( vCONTRACT_ORIG, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'CONTRACT_ORIG' );
+CellPutS( vPORTFOLIO, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'PORTFOLIO' );
+CellPutS( vINSTRUMENT_CODE, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'INSTRUMENT_CODE' );
+CellPutS( vPVS, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'PVS' );
+CellPutS( vASSETKLASSE, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'ASSETKLASSE' );
+CellPutS( vBESTANDSKLASSE, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'BESTANDSKLASSE' );
+CellPutS( vCCY, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'CCY' );
+CellPutS( vIFRS_KATEGORIE, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'IFRS_KATEGORIE' );
+CellPutS( vIFRS_STUFE, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'IFRS_STUFE' );
+CellPutS( vKONSORTIAL_IDENT, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'KONSORTIAL_IDENT' );
+CellPutS( vPRODUKT_GRP_VORSYS, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'PRODUKT_GRP_VORSYS' );
+CellPutS( vHERKUNFT_ANLIEF_KENNZAHL, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'HERKUNFT_ANLIEF_KENNZAHL' );
+CellPutS( vLADE_DAT, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'LADE_DAT' );
+CellPutS( vSCHLUESSEL_IFRS, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'SCHLUESSEL_IFRS' );
+CellPutS( vGUV_POSITION, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'GUV_POSITION' );
+CellPutS( vSEGMENT, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'SEGMENT' );
+CellPutS( vOLAP_VE_SCHL, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'OLAP_VE_SCHL' );
+CellPutN( vZINS, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'ZINS' );
+CellPutN( vPROV, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'PROV' );
+CellPutN( vRISIKO, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'RISIKO' );
+CellPutN( vFV, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'FV' );
+CellPutN( vSONSTIGES, 'Grunddaten_IFRS', 'Zeile_'|vZAEHLER, vStichtag, 'SONSTIGES' );
+
+
+#endregion

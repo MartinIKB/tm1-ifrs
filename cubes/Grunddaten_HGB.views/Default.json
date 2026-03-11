@@ -1,0 +1,28 @@
+{
+	"@type":"MDXView",
+	"Name":"Default",
+	"MDX@Code.link":"Default.mdx",
+	"IsAutocalculate" : true,
+	"IsDeferComputeOnLeafDataEntry" : false,
+	"IsSuppressComputeOnOpen" : false,
+	"Meta" : 
+	{
+		"Aliases" : {},
+		"ContextSets" : 
+		{
+			"[Zeit].[Zeit]" : 
+			{
+				"Expression" : "{[Zeit].[Zeit].MEMBERS}"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Grunddaten_HGB].[Grunddaten_HGB]" : false,
+			"[Zeilen].[Zeilen]" : false,
+			"[Zeit].[Zeit]" : false
+		}
+	},
+	"ViewExtractSkipConsolidatedValues" : true,
+	"ViewExtractSkipRuleValues" : false,
+	"ViewExtractSkipZeroes" : true
+}
